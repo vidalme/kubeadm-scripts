@@ -6,10 +6,10 @@ module "ec2_instance" {
   source = "../modules/ec2"
 
   instance_name  = "k8s-node"
-  ami_id         = "ami-0735c191cf914754d"
+  ami_id         = "ami-05d38da78ce859165"
   instance_type  = "t2.medium"
   key_name       = "techiescamp"
-  subnet_ids     = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+  subnet_ids     = ["subnet-0df7e80d68d36c61e", "subnet-01650f6ef178dc23b", "subnet-02b3fe197a60e9004"]
   instance_count = 3
 
   inbound_from_port  = ["0", "6443", "22", "30000"]
